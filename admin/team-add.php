@@ -33,48 +33,52 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])){
                         <form class="forms-sample" method="POST" enctype="multipart/form-data">
                             <div class="row">
                             <div class="form-group col-md-4 col-sm-6 col-12">
+                                <label for="name">Employee Type</label>
+                                <select class="form-control" name="emp_type" id="name">
+                                    <option value="principal">Principal</option>
+                                    <option value="Academic_Incharge">Academic Incharge</option>
+                                    <option value="Chief_Instructor">Chief Instructor</option>
+                                    <option value="Instructor">Instructor</option>
+                                    <option value="Jr_Instructor">Junior Instructor</option>
+                                    <option value="Guest_Speaker">Guest Speaker</option>
+                                    <option value="Office_Staff">Office Staff</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4 col-sm-6 col-12">
                                 <label for="name">Employee Name</label>
-                                <input type="text" id="name" class="form-control" name="emp_name" placeholder="Type....." required>
+                                <input type="text" id="name" class="form-control" name="emp_name" placeholder="Type your name" required>
                             </div>
                             <div class="form-group col-md-4 col-sm-6 col-12">
-                                <label for="father">Father's Name</label>
-                                <input type="text" id="father" class="form-control" name="father_name" placeholder="Type.....">
-                            </div>
-                            <div class="form-group col-md-4 col-sm-6 col-12">
-                                <label for="mother">Mother's Name</label>
-                                <input type="text" id="mother" class="form-control" name="mother_name"  placeholder="Type.....">
+                                <label for="designation">Employee Designation</label>
+                                <input type="text" id="designation" class="form-control" name="emp_designation" placeholder="Type your Designation" required>
                             </div>
                             <div class="form-group col-md-4 col-sm-6 col-12">
                                 <label for="dob">Date of Birth</label>
-                                <input type="date" id="dob" class="form-control" name="dob" placeholder="Type....." required>
+                                <input type="date" id="dob" class="form-control" name="dob" required>
                             </div>
                             <div class="form-group col-md-4 col-sm-6 col-12">
                                 <label for="phn">Phone No</label>
-                                <input type="text" id="phn" class="form-control" name="phn" placeholder="Type....." required>
+                                <input type="text" id="phn" class="form-control" name="phn" placeholder="Type phone no" required>
                             </div>
                             <div class="form-group col-md-4 col-sm-6 col-12">
                                 <label for="emailId">Email ID</label>
-                                <input type="email" id="emailId" class="form-control" name="emailId" placeholder="Type....." required>
+                                <input type="email" id="emailId" class="form-control" name="emailId" placeholder="Type email id " required>
                             </div>
                             <div class="form-group col-md-4 col-sm-6 col-12">
                                 <label for="tel">Telephone</label>
-                                <input type="text" id="tel" class="form-control" name="tel"  placeholder="Type.....">
+                                <input type="text" id="tel" class="form-control" name="tel"  placeholder="Type telephone no ">
                             </div>
                             <div class="form-group col-md-4 col-sm-6 col-12">
                                 <label for="fbId">Facebook</label>
-                                <input type="text" id="fbId" class="form-control" name="fbId" placeholder="Type.....">
+                                <input type="text" id="fbId" class="form-control" name="fbId" placeholder="Type facebook link ">
                             </div>
                             <div class="form-group col-md-4 col-sm-6 col-12">
                                 <label for="twit">Twitter</label>
-                                <input type="text" id="twit" class="form-control" name="twit" placeholder="Type.....">
+                                <input type="text" id="twit" class="form-control" name="twit" placeholder="Type twiter link ">
                             </div>
-                            <!-- <div class="form-group col-md-4 col-sm-6 col-12">
-                            <label for="photo">Photo</label>
-                                <input type="file" class="form-control" name="photo" id="photo" placeholder="" required>
-                            </div> -->
                             <div class="form-group col-md-4 col-sm-6 col-12">
-                                <label for="joinDate">Join Date</label>
-                                <input type="date" id="joinDate" class="form-control" name="joinDate" placeholder="Type....." required>
+                            <label for="photo">Photo <span style="color:red; ">Picture Size must be 300*300px</span></label>
+                                <input type="file" class="form-control" name="photo" id="photo" required>
                             </div>
                             </div>
                             <button type="submit" name="submit" class="btn btn-primary me-2">Submit</button>
